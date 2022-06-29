@@ -62,12 +62,12 @@ namespace file_demo__01.mail
                 client.EnableSsl = true;
                 client.UseDefaultCredentials = false;
                 client.Host = "smtp.gmail.com"; // host mail
-                client.Credentials = new NetworkCredential("ufukkurekci@gmail.com", "ivrysijzifiedmme"); // mail engine
+                client.Credentials = new NetworkCredential("******@******", "********"); // mail engine
                 mail.IsBodyHtml = true;
                 mail.To.Add(dictionary["to"]);
                 mail.CC.Add(dictionary["cc"]);
                 mail.Bcc.Add(dictionary["bcc"]);
-                mail.From = (new MailAddress("ufukkurekci.belbim@gmail.com", "nickname"));
+                mail.From = (new MailAddress("********@******", "nickname"));
                 mail.Subject = (dictionary["subject"]);
 
                 // For embedded image
